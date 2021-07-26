@@ -1,0 +1,19 @@
+{
+  "name": "supertest-arch-example",
+  "version": "1.0.0",
+  "description": "Exemplo de arquitetura para projetos utilizando supertest",
+  "main": "index.js",
+  "scripts": {
+    "test:prod": "NODE_ENV=production mocha"
+  },
+  "author": "Maximiliano Alves da Cruz",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "faker": "^5.5.3",
+    "joi": "^17.4.1",
+    "mocha": "^9.0.3",
+    "mochawesome": "^6.2.2",
+    "supertest": "^6.1.4"
+  }
+}
