@@ -1,0 +1,34 @@
+name: CI para executar o teste e salvar o report no gh-pages.
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs: 
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+        
+      - name: Install and exec tests
+        run: npm install && npm run test:prod
+
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          access_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: report
+   
