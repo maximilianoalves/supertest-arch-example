@@ -10,7 +10,6 @@ describe('GET - Usuarios', () => {
         })
     });
 
-
     it('Deve validar o contrato da lista de usuários', async () => {
         let res = await usuarios.get
         joi.assert(res.body, usuariosSchema)
