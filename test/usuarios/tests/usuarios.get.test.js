@@ -1,8 +1,8 @@
 'use strict';
 const usuarios = require('../requests/usuarios.request')
 const joi = require('joi');
-const usuariosSchema = require('../contracts/usuarios.contract');
-const usuarioSchema = require('../contracts/usuario.contract');
+const usuariosSchema = require('../schemas/usuarios.schema');
+const usuarioSchema = require('../schemas/usuario.schema');
 
 describe('GET - Usuarios', () => {
     it('Deve buscar os usuários com sucesso - @smoke', async () => {
@@ -11,7 +11,7 @@ describe('GET - Usuarios', () => {
         })
     });
 
-    it('Deve validar o contrato da lista de usuários - @contract', async () => {
+    it('Deve validar o schema json da lista de usuários - @schema', async () => {
         let res = await usuarios.get
         joi.assert(res.body, usuariosSchema)
     });
@@ -26,7 +26,7 @@ describe('GET - Usuarios', () => {
         chai.assert.isNotEmpty(resUsuariosById.body)
     });
 
-    it('Deve validar o contrato de um usuário por id com sucesso - @contract', async () => {
+    it('Deve validar o schema json de um usuário por id com sucesso - @schema', async () => {
         let resUsuarios = await usuarios.get
         let idPrimeiroUsuario = resUsuarios.body.usuarios[0]._id
         
