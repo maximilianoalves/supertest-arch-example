@@ -4,13 +4,13 @@ const joi = require('joi');
 const usuariosSchema = require('../contracts/usuarios.contract');
 
 describe('GET - Usuarios', () => {
-    it('Deve buscar os usuários com sucesso', async () => {
+    it('Deve buscar os usuários com sucesso - @smoke', async () => {
         usuarios.get.expect(200).then(res => {
             chai.assert.isNotEmpty(res.body)
         })
     });
 
-    it('Deve validar o contrato da lista de usuários', async () => {
+    it('Deve validar o contrato da lista de usuários - @contract', async () => {
         let res = await usuarios.get
         joi.assert(res.body, usuariosSchema)
     });
