@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:prod": "NODE_ENV=production mocha",
-    "test:prod:contract": "NODE_ENV=production mocha --grep=contract",
+    "test:prod:schema": "NODE_ENV=production mocha --grep=schema",
     "test:prod:smoke": "NODE_ENV=production mocha --grep=smoke",
     "test:prod:integration": "NODE_ENV=production mocha --grep=integration"
   },

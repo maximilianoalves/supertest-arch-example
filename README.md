@@ -34,9 +34,9 @@
  ┃ ┃ ┃ ┣ 📜 login.post.test.js  
  ┃ ┣ 📂 produtos  
  ┃ ┗ 📂 usuarios  
- ┃ ┃ ┣ 📂 contracts  
- ┃ ┃ ┃ ┣ 📜 usuario.contract.js   
- ┃ ┃ ┃ ┗ 📜 usuarios.contract.js  
+ ┃ ┃ ┣ 📂 schemas
+ ┃ ┃ ┃ ┣ 📜 usuario.schema.js
+ ┃ ┃ ┃ ┗ 📜 usuarios.schema.js
  ┃ ┃ ┣ 📂 payloads  
  ┃ ┃ ┃ ┗ 📜 usuario.payload.js  
  ┃ ┃ ┣ 📂 requests  
@@ -58,13 +58,13 @@
 - ### Por npm:
   - Todos os testes: 
     - ```npm run test:prod```
-  - Somente a suite de testes de contratos:
-    - ```npm run test:prod:contract```
+  - Somente a suite de testes de schema json:
+    - ```npm run test:prod:schema```
 - ### Por linha de comando:
   - Todos os testes:
     - ```NODE_ENV=production mocha```
-  - Somente a suite de testes de contratos:
-    - ```NODE_ENV=production mocha --grep=contract```
+  - Somente a suite de testes de schema json:
+    - ```NODE_ENV=production mocha --grep=schema```
 
 
 ## Relatório de execução
