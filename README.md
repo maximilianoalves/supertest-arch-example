@@ -34,14 +34,14 @@
  ┃ ┃ ┃ ┣ 📜 login.post.test.js  
  ┃ ┣ 📂 produtos  
  ┃ ┗ 📂 usuarios  
- ┃ ┃ ┣ 📂 contracts 
+ ┃ ┃ ┣ 📂 contracts  
  ┃ ┃ ┃ ┣ 📜 usuario.contract.js   
  ┃ ┃ ┃ ┗ 📜 usuarios.contract.js  
  ┃ ┃ ┣ 📂 payloads  
  ┃ ┃ ┃ ┗ 📜 usuario.payload.js  
  ┃ ┃ ┣ 📂 requests  
  ┃ ┃ ┃ ┗ 📜 usuarios.request.js  
- ┃ ┃ ┗ 📂 tests 
+ ┃ ┃ ┗ 📂 tests   
  ┃ ┃ ┃ ┣ 📜 usuarios.delete.test.js  
  ┃ ┃ ┃ ┣ 📜 usuarios.get.test.js  
  ┃ ┃ ┃ ┗ 📜 usuarios.post.test.js  
