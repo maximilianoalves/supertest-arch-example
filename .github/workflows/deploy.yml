@@ -9,21 +9,18 @@ on:
 jobs: 
   build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x]
 
     steps:
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 14
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 14
 
       - name: Checkout
         uses: actions/checkout@v2.3.1
         
       - name: Install and exec tests
-        run: npm install && npm run test:prod
+        run: npm ci && npm run test:prod
 
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
@@ -31,4 +28,3 @@ jobs:
           access_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: report
-   
