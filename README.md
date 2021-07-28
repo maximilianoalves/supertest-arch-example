@@ -25,6 +25,13 @@
  ┃ ┣ 📂 assets  
  ┃ ┗ 📜 index.html  
  ┣ 📂 test  
+ ┃ ┣ 📂 login
+ ┃ ┃ ┣ 📂 payloads  
+ ┃ ┃ ┃ ┗ 📜 login.payload.js  
+ ┃ ┃ ┣ 📂 requests  
+ ┃ ┃ ┃ ┗ 📜 login.request.js  
+ ┃ ┃ ┗ 📂 tests  
+ ┃ ┃ ┃ ┣ 📜 login.post.test.js  
  ┃ ┣ 📂 produtos  
  ┃ ┗ 📂 usuarios  
  ┃ ┃ ┣ 📂 contracts  
