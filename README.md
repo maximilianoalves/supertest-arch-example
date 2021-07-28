@@ -34,9 +34,9 @@
  ┃ ┃ ┃ ┣ 📜 login.post.test.js  
  ┃ ┣ 📂 produtos  
  ┃ ┗ 📂 usuarios  
- ┃ ┃ ┣ 📂 schemas
- ┃ ┃ ┃ ┣ 📜 usuario.schema.js
- ┃ ┃ ┃ ┗ 📜 usuarios.schema.js
+ ┃ ┃ ┣ 📂 schemas  
+ ┃ ┃ ┃ ┣ 📜 usuario.schema.js  
+ ┃ ┃ ┃ ┗ 📜 usuarios.schema.js  
  ┃ ┃ ┣ 📂 payloads  
  ┃ ┃ ┃ ┗ 📜 usuario.payload.js  
  ┃ ┃ ┣ 📂 requests  
