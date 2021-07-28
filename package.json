@@ -4,7 +4,9 @@
   "description": "Exemplo de arquitetura para projetos utilizando supertest",
   "main": "index.js",
   "scripts": {
-    "test:prod": "NODE_ENV=production mocha"
+    "test:prod": "NODE_ENV=production mocha",
+    "test:prod:contract": "NODE_ENV=production mocha --grep=contract",
+    "test:prod:smoke": "NODE_ENV=production mocha --grep=smoke"
   },
   "author": "Maximiliano Alves da Cruz",
   "license": "ISC",
