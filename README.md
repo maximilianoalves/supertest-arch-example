@@ -1,6 +1,6 @@
 <h1 align="center">Exemplo de arquitetura utilizando SuperTest</h1>
 
-<p>Este projeto tem por objetivo apresentar uma arquitetura de testes de API utilizando SuperTest</p>
+<p>Este projeto tem por objetivo apresentar uma arquitetura de testes de API utilizando SuperTest.</p>
 
 ## Tecnologias utilizadas
 
