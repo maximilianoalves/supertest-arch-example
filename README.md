@@ -25,7 +25,7 @@
  ┃ ┣ 📂 assets  
  ┃ ┗ 📜 index.html  
  ┣ 📂 test  
- ┃ ┣ 📂 login
+ ┃ ┣ 📂 login  
  ┃ ┃ ┣ 📂 payloads  
  ┃ ┃ ┃ ┗ 📜 login.payload.js  
  ┃ ┃ ┣ 📂 requests  
