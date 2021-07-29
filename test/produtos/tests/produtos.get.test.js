@@ -7,7 +7,6 @@ const produtoSchema = require('../schemas/produto.schema')
 describe('GET - Produtos', () => {
     it('Deve buscar os produtos com sucesso - @smoke', async () => {
        let res = await produtos.get 
-       console.log(res.body)
        chai.expect(res.statusCode).to.equal(200)
        chai.assert.isNotEmpty(res.body)
     });
