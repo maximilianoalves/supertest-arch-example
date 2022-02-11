@@ -1,10 +1,8 @@
-<h1 align="center">Architecture example using SuperTest for api tests</h1>
+<h1 align="center">Exemplo de arquitetura utilizando SuperTest</h1>
 
-<b>Para acessar a versão em Português do Brasil, basta clicar [aqui](/docs/README-pt_BR.md)! :brazil:</b>
+<p>Este projeto tem por objetivo apresentar uma arquitetura de testes de API utilizando SuperTest.</p>
 
-<p>This project has with main objective show a simple architecture for api tests using SuperTest framework.</p>
-
-## Technologies and tools used:
+## Tecnologias utilizadas
 
 - [ServeRest](https://github.com/ServeRest/ServeRest/)
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
@@ -15,7 +13,7 @@
 - [mocha](https://github.com/mochajs/mocha)
 - [mochawesome](https://github.com/adamgruber/mochawesome)
 
-## File Structure
+## Estrutura de arquivos.
 
 📦 supertest-arch-example  
  ┣ 📂 .github  
@@ -55,31 +53,37 @@
  ┣ 📜 package-lock.json  
  ┗ 📜 package.json  
   
- ## Execution Examples
+ ## Exemplos de execução
 
-- ### By npm:
-  - To run all tests suite: 
+- ### Por npm:
+  - Todos os testes: 
     - ```npm run test:prod```
-  - Only json schema tests suite:
+  - Somente a suite de testes de schema json:
     - ```npm run test:prod:schema```
-- ### By the command line:
-  - To run all tests suite:
+- ### Por linha de comando:
+  - Todos os testes:
     - ```NODE_ENV=production mocha```
-  - Only json schema tests suite:
+  - Somente a suite de testes de schema json:
     - ```NODE_ENV=production mocha --grep=schema```
 
 
-## Execution report
+## Relatório de execução
 
-Using the mochawesome and git workflows:   
+Utilizando o mochawesome e git workflows:   
   - Job:
     - https://github.com/maximilianoalves/supertest-arch-example/actions/workflows/deploy.yml
-  - Report: 
+  - Relatório: 
     - https://maximilianoalves.github.io/supertest-arch-example/ 
 
-## Doubts or improvements !? contact me: 
+## Melhorias, criticas ou dúvidas: 
 
-[![Twitter](https://badgen.net/badge/Twitter/%40max_dacruz?icon=twitter)](https://twitter.com/max_dacruz) [![Medium](https://badgen.net/badge/Medium/%40maximilianoalves?icon=medium)](https://medium.com/@maximilianoalves) [![Linkedin](https://badgen.net/badge/Linkedin/maximilianodacruz?icon=linkedin)](https://www.linkedin.com/in/maximilianodacruz/) [![Instagram](https://badgen.net/badge/Instagram/max_dacruz?icon=instagram)](https://www.instagram.com/max_dacruz/) [![Facebook](https://badgen.net/badge/Facebook/maximilianoalvesdacruz?icon=facebook)](https://www.facebook.com/maximilianoalvesdacruz)
+Não hesite em abrir uma issue ou entrar em contato comigo: 
+
+[![Twitter](https://badgen.net/badge/Twitter/%40max_dacruz?icon=twitter)](https://twitter.com/max_dacruz)
+[![Medium](https://badgen.net/badge/Medium/%40maximilianoalves?icon=medium)](https://medium.com/@maximilianoalves)
+[![Linkedin](https://badgen.net/badge/Linkedin/maximilianodacruz?icon=linkedin)](https://www.linkedin.com/in/maximilianodacruz/)
+[![Instagram](https://badgen.net/badge/Instagram/max_dacruz?icon=instagram)](https://www.instagram.com/max_dacruz/)
+[![Facebook](https://badgen.net/badge/Facebook/maximilianoalvesdacruz?icon=facebook)](https://www.facebook.com/maximilianoalvesdacruz)
  
 
 
