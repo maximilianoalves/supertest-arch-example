@@ -1,5 +1,8 @@
 <h1 align="center">Architecture example using SuperTest for api tests</h1>
 
+[![CI para executar o teste e salvar o report no gh-pages.](https://github.com/maximilianoalves/supertest-arch-example/actions/workflows/deploy.yml/badge.svg)](https://github.com/maximilianoalves/supertest-arch-example/actions/workflows/deploy.yml)
+
+
 <b>Para acessar a versão em Português do Brasil, basta clicar [aqui](/docs/README-pt_BR.md)! :brazil:</b>
 
 <p>This project has with main objective show a simple architecture for api tests using SuperTest framework.</p>
